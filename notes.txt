@@ -1,0 +1,9 @@
+To run the flask application without flasgger
+
+For GET request - 127.0.0.1:8000/predict?SepalLengthCm=1.2&SepalWidthCm=1.4&PetalLengthCm=2.8&PetalWidthCm=1.0
+Keep the body empty for the GET request and send all the parameters with the URL itself.
+
+For POST request - 127.0.0.1:8000/predict_post
+If input is given as form-data -> use request.form to receive it.
+If input is given as raw, type json -> use request.json to receive it. 
+

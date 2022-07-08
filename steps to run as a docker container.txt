@@ -1,0 +1,8 @@
+Build the docker image
+	docker build -t iris_image .
+
+Check if the image has been created
+	docker image ls
+	
+Run the created image as a docker container
+	docker run --name iris_container -p 8000:8000 iris_image

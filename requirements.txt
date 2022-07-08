@@ -1,0 +1,9 @@
+Flask
+gunicorn
+itsdangerous
+Jinja2
+MarkupSafe
+Werkzeug
+scikit-learn==0.23.2
+pandas
+flasgger
