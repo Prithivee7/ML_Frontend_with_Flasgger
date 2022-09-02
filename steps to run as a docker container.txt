@@ -6,3 +6,6 @@ Check if the image has been created
 	
 Run the created image as a docker container
 	docker run --name iris_container -p 8000:8000 iris_image
+
+Run docker container interactively
+	docker container run -it iris_container /bin/bash
