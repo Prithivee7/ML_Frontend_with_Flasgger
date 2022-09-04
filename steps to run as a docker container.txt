@@ -8,4 +8,7 @@ Run the created image as a docker container
 	docker run --name iris_container -p 8000:8000 iris_image
 
 Run docker container interactively
-	docker container run -it iris_container /bin/bash
+	docker container run -it iris_image /bin/bash
+
+Commiting a container
+	docker commit -m "Added commit command" container_id updated_image_name 
