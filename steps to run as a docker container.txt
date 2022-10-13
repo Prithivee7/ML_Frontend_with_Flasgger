@@ -12,3 +12,25 @@ Run docker container interactively
 
 Commiting a container
 	docker commit -m "Added commit command" container_id updated_image_name 
+
+################################################################## Additional #######################################################################################
+
+BY default docker runs in bridge network.
+
+To create a network in docker
+    docker network create network_name
+
+To make a container run in created network
+    docker run -d --name container_name --net network_name image_name
+    
+To list all the networks
+    docker network list
+    
+To remove a network
+    docker network rm network_name
+
+To check which network a container is running
+    docker inspect container_id | grep NetworkMode
+
+To run docker interactively
+    docker run -it alpine:latest
