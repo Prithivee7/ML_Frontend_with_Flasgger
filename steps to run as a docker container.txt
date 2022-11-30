@@ -19,6 +19,12 @@ To ssh into a running container
 To run a docker container in detached mode
 	docker run -d -p 5000:5000 --name container_name image_name
 
+To kill a running container
+	docker kill container_name
+
+To list all the containers
+	docker container ls
+	
 ################################################################## Additional #######################################################################################
 
 BY default docker runs in bridge network.
