@@ -16,6 +16,9 @@ Commiting a container
 To ssh into a running container
 	docker exec -it running_container_name /bin/bash
 
+To run a docker container in detached mode
+	docker run -d -p 5000:5000 --name container_name image_name
+
 ################################################################## Additional #######################################################################################
 
 BY default docker runs in bridge network.
